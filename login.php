@@ -52,6 +52,7 @@ $conn->close();
         <input type="password" name="password" placeholder="Enter your password"><br>
         <button>Login</button>
     </form>
+    <a href="forgot_password.html">Forgot Password</a>
 </body>
 </html>
 
