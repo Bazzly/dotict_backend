@@ -29,8 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Verify the password
             if (password_verify($password, $user['password'])) {
-                // Password is correct, create a session and redirect to the dashboard
-                $_SESSION['username'] = $username;
+        // Password is correc create a session and redirect to the dashboard
+                $_SESSION['data'] = $user;
+    
                 header("Location: dashboard.php");
                 exit();
             } else {

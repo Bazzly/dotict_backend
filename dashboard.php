@@ -1,12 +1,5 @@
 <?php
-// Start the session
-session_start();
-
-// Check if the user is logged in, otherwise, redirect to the login page
-if (!isset($_SESSION['username'])) {
-    header("Location: login.html");
-    exit();
-}
+include('config/session.php');
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +10,10 @@ if (!isset($_SESSION['username'])) {
     <title>Dashboard</title>
 </head>
 <body>
-    <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
-    <p>This is your dashboard.</p>
+    <h2>Welcome, <?php echo $_SESSION['data']['username']; ?>!</h2>
+    <p>This is your dashboard. your id is <?php echo $_SESSION['data']['id']; ?></p>
     <a href="logout.php">Logout</a>
+    <br>
+    <a href="profile_update.php">update</a>
 </body>
 </html>
