@@ -15,5 +15,6 @@ include('config/session.php');
     <a href="logout.php">Logout</a>
     <br>
     <a href="profile_update.php">update</a>
+    <a href="todo.php">View todo</a>
 </body>
 </html>

@@ -57,6 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
         <input type="email" name="email" placeholder="Enter your email" value="<?php echo $email; ?>" ><br>
         <button>update profile</button>
     </form>
+    <a href="dashboard.php">Dashboard</a>
 </body>
 
 </html>
